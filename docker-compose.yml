@@ -8,6 +8,7 @@ services:
       dockerfile: Dockerfile_Java
     volumes:
       - ./conf:/data/conf
+      - /etc/localtime:/etc/localtime:ro
     links:
       - dynfidb:dynfidb
     ports:
